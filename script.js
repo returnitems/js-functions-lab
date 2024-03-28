@@ -164,6 +164,12 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete Exercise 9 in the space below:
 */
 
-const numArgs = 
+const numArgs = (...arguments) => {
+    totalArgs = [];
+    for (i = 0; i < arguments.length; i++) {
+        totalArgs.push(i);
+    }
+    return totalArgs.length;
+}
 
-console.log('Exercise 9 Result:', );
+console.log('Exercise 9 Result:', numArgs(2,4,6,8,"hello"));
